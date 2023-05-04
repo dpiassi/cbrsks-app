@@ -34,7 +34,7 @@ function EnterGuild() {
           {" "}
           Access game features
         </Text>
-        <DiscordButton as="a" href="/wallet">
+        <DiscordButton as="a" href="/game">
           Sign in with Discord
         </DiscordButton>
       </S.FeakForm>
