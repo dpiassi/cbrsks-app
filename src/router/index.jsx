@@ -8,8 +8,8 @@ import Dashboard from "../pages/Admin";
 import loaderRequireAuthAdmin from "../layouts/RequiredAuth/loaderRequiredAuthAdmin";
 import EnterGuild from "../pages/EnterGuild";
 import RequiredAuthWithoutIsGuild from "../layouts/RequiredAuth/RequiredAuthWithoutIsGuild";
-import ConnectWallet from "../pages/ConnectWallet";
-import RequiredAuthWithoutWallet from "../layouts/RequiredAuth/RequiredAuthWithoutWallet";
+// import ConnectWallet from "../pages/ConnectWallet";
+// import RequiredAuthWithoutWallet from "../layouts/RequiredAuth/RequiredAuthWithoutWallet";
 
 const router = createBrowserRouter([
   {
@@ -25,15 +25,15 @@ const router = createBrowserRouter([
       </RequiredAuthWithoutIsGuild>
     ),
   },
-  {
-    path: "wallet",
-    loader: loaderRequireAuth,
-    element: (
-      <RequiredAuthWithoutWallet>
-        <ConnectWallet />
-      </RequiredAuthWithoutWallet>
-    ),
-  },
+  // {
+  //   path: "wallet",
+  //   loader: loaderRequireAuth,
+  //   element: (
+  //     <RequiredAuthWithoutWallet>
+  //       <ConnectWallet />
+  //     </RequiredAuthWithoutWallet>
+  //   ),
+  // },
   {
     path: "game",
     loader: loaderRequireAuth,
